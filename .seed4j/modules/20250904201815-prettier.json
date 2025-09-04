@@ -1,11 +1,11 @@
 {
-  "module" : "prettier",
-  "date" : "2025-09-04T20:18:15.618153157Z",
-  "properties" : {
-    "projectName" : "Seed4J Docker Compose",
-    "baseName" : "seed4jDockerCompose",
-    "nodePackageManager" : "npm",
-    "endOfLine" : "lf",
-    "indentSize" : 2
+  "module": "prettier",
+  "date": "2025-09-04T20:18:15.618153157Z",
+  "properties": {
+    "projectName": "Seed4J Docker Compose",
+    "baseName": "seed4jDockerCompose",
+    "nodePackageManager": "npm",
+    "endOfLine": "lf",
+    "indentSize": 2
   }
 }

@@ -1,11 +1,11 @@
 {
-  "module" : "init",
-  "date" : "2025-09-04T20:18:15.423996295Z",
-  "properties" : {
-    "projectName" : "Seed4J Docker Compose",
-    "baseName" : "seed4jDockerCompose",
-    "nodePackageManager" : "npm",
-    "endOfLine" : "lf",
-    "indentSize" : 2
+  "module": "init",
+  "date": "2025-09-04T20:18:15.423996295Z",
+  "properties": {
+    "projectName": "Seed4J Docker Compose",
+    "baseName": "seed4jDockerCompose",
+    "nodePackageManager": "npm",
+    "endOfLine": "lf",
+    "indentSize": 2
   }
 }
