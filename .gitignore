@@ -139,3 +139,4 @@ Desktop.ini
 ######################
 seed4j/*
 !seed4j/.gitkeep
+certs/*
