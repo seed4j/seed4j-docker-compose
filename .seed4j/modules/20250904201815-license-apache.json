@@ -1,0 +1,11 @@
+{
+  "module" : "license-apache",
+  "date" : "2025-09-04T20:18:15.590977601Z",
+  "properties" : {
+    "projectName" : "Seed4J Docker Compose",
+    "baseName" : "seed4jDockerCompose",
+    "nodePackageManager" : "npm",
+    "endOfLine" : "lf",
+    "indentSize" : 2
+  }
+}
