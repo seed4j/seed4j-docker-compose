@@ -5,13 +5,28 @@ services:
     environment:
       APPLICATION_CORS_ALLOWED_ORIGINS: https://start.seed4j.com
       SEED4J_FORCED_PROJECT_FOLDER: /tmp/seed4j
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgresql:5432/Seed4J
+      SPRING_DATASOURCE_PASSWORD: ${SEED4J_PSQL_PASSWORD}
+      SPRING_PROFILES_ACTIVE: cloud,psql
     expose:
       - '1339'
     volumes:
       - ./seed4j:/tmp/seed4j:Z
 
+  postgresql:
+    image: postgres:17.6
+    container_name: postgres
+    volumes:
+      - ./postgresql/data/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=Seed4J
+      - POSTGRES_PASSWORD=${SEED4J_PSQL_PASSWORD}
+      - POSTGRES_HOST_AUTH_METHOD=scram-sha-256
+    ports:
+      - '127.0.0.1:5432:5432'
+
   nginx:
-    image: nginx:1.27
+    image: nginx:1.29
     container_name: nginx
     ports:
       - '80:80'
