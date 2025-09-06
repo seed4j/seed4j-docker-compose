@@ -17,7 +17,7 @@ services:
     image: postgres:17.6
     container_name: postgres
     volumes:
-      - ./postgresql/data/:/var/lib/postgresql/data/
+      - ~/postgresql/data/:/var/lib/postgresql/data/
     environment:
       - POSTGRES_USER=Seed4J
       - POSTGRES_PASSWORD=${SEED4J_PSQL_PASSWORD}
